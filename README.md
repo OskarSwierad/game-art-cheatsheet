@@ -14,6 +14,10 @@ Find more game dev tutorials at [TechArtAid.com](https://techartaid.com)
 - [Contributing](#contributing)
 - [License](#license)
 
+```
+Still work in progress. Pictures coming soon
+```
+
 ## Content Troubleshooting
 
 ### Geometry
