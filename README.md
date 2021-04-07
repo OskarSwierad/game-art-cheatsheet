@@ -2,8 +2,6 @@
 
 > Most common glitches in game art and how to solve them
 
----
-
 This is a raw source for the guide at **https://techartaid.com/cheatsheet/**
 
 ## Table of contents
