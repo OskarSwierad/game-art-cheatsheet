@@ -1,8 +1,8 @@
-# Game Art Cheatsheet by [Tech Art Aid](https://techartaid.com)
+> 
 
-> Most common glitches in game art and how to solve them
+**Most common glitches in game art and how to solve them**
 
-This is a raw source for the guide at **https://techartaid.com/cheatsheet/**
+Find more game dev tutorials at [TechArtAid.com](https://techartaid.com)
 
 ## Table of contents
 
@@ -13,8 +13,6 @@ This is a raw source for the guide at **https://techartaid.com/cheatsheet/**
 - [Credits](#credits)
 - [Contributing](#contributing)
 - [License](#license)
-
----
 
 ## Content Troubleshooting
 
@@ -48,17 +46,18 @@ This is a raw source for the guide at **https://techartaid.com/cheatsheet/**
 | Shadow acne | Stepped shadows at certain angles | Shadow map’s resolution is not enough to represent the continuous surface | - Play with shadow bias parameter in light’s settings<br>- Increase shadow map resolution |
 | Dynamic lights limit | Flickering lights | Renderer reached a limit of light sources affecting the same pixel | - Reduce # of lights overlapping in that place (change radius, move, delete)<br>- Use static (baked) lights instead |
 
-## Credits
-
-[Oskar Świerad](http://oskarswierad.com) started and maintains the project.
-
-Huge thanks to contibutors of examples from the [Unity](https://www.reddit.com/r/Unity3D/comments/mlp0od/working_on_a_cheatsheet_for_content_issues_what/), [Unreal](https://www.reddit.com/r/unrealengine/comments/mlp19p/working_on_a_cheatsheet_for_game_art_issues_what/) Reddit threads and [Twitter](https://twitter.com/TechArtAid/status/1379574278975332353).
-
 ## Contributing
 
 If you want something added or fixed, just add a new [issue](https://github.com/OskarSwierad/game-art-cheatsheet/issues).
+<br>
 I welcome [pull requests](https://github.com/OskarSwierad/game-art-cheatsheet/pulls) too! (though quality is expected)
+
+## Credits
+
+[Oskar Świerad](http://oskarswierad.com) of [Tech Art Aid](https://techartaid.com) is the original author and current maintainer.
+<br>
+Huge thanks to contibutors of examples from the [Unity](https://www.reddit.com/r/Unity3D/comments/mlp0od/working_on_a_cheatsheet_for_content_issues_what/), [Unreal](https://www.reddit.com/r/unrealengine/comments/mlp19p/working_on_a_cheatsheet_for_game_art_issues_what/) Reddit threads and [Twitter](https://twitter.com/TechArtAid/status/1379574278975332353).
 
 ## License
 
-Feel free to link, copy, print and modify the project, under the terms described in the [license document](https://github.com/OskarSwierad/game-art-cheatsheet/blob/main/LICENSE).
+Feel free to share, copy, print and modify the document, under the terms described in the [license file](https://github.com/OskarSwierad/game-art-cheatsheet/blob/main/LICENSE).
