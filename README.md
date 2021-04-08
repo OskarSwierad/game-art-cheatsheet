@@ -9,9 +9,12 @@ Find more game dev tutorials at [TechArtAid.com](https://techartaid.com)
 - [Content Troubleshooting](#content-troubleshooting)
   * [Geometry](#geometry)
   * [Materials](#materials)
+  * [Transparency](#transparency)
   * [Lighting](#lighting)
-- [Credits](#credits)
+  * [Animation](#animation)
+  * [Physics](#physics)
 - [Contributing](#contributing)
+- [Credits](#credits)
 - [License](#license)
 
 ```
