@@ -4,21 +4,8 @@
 
 Find more game dev tutorials at [TechArtAid.com](https://techartaid.com)
 
-## Table of contents
-
-- [Content Troubleshooting](#content-troubleshooting)
-  * [Geometry](#geometry)
-  * [Materials](#materials)
-  * [Transparency](#transparency)
-  * [Lighting](#lighting)
-  * [Animation](#animation)
-  * [Physics](#physics)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [License](#license)
-
 ```
-Still work in progress. Pictures coming soon
+Pictures coming soon
 ```
 
 ## Content Troubleshooting
@@ -41,6 +28,7 @@ Still work in progress. Pictures coming soon
 | - | - | - | - |
 | **Bilinear mipmap filtering** | Blurry textures at oblique angles | Bilinear filtering in perspective projection underestimates required mipmap level of a texture | - Use anisotropic texture filtering, if performance tradeoff is acceptable |
 | **Negative or NaN color** | Black or deeply saturated squares on screen | Pixel’s color value is negative or not a number. This corrupts some algorithms (bloom) | - Check for division-by-zero in shaders<br>- Clamp values to [0,1] in shaders |
+| **Edge bleeding** | Colors from another island of UV space bleeding into the borders of given one | Bilinear texture filtering picks up information from neighboring texels, as it's unaware of UV seams or image atlas items | - Increase margins between UV islands<br>- Add 1 pixel of space between items in tileset/atlas<br>- In Substance Painter, use `Dilation` mode when exporting |
 | **Alpha bleeding** | White edges in textures with transparency | https://ciechanow.ski/alpha-compositing/ | - In Substance Painter, use `Dilation` mode when exporting<br> -In Photoshop, fill the background by selecting alpha mask, inverting selection and use Fill > Content Aware<br>- Respect premultiplied alpha in shaders |
 | **Banding in textures** | Stepped gradients in textures | Lossy compression can’t represent subtle gradient | - Use more contrast in your source textures (e.g. stronger normal map), then reduce it in shader |
 | **Banding in display** | Stepped gradients on screen | Transition between certain colors can’t be represented, due to display’s color precision | - Add some film grain<br>- Use dithering<br>- Check if your post-process stack has HDR until very end |
@@ -63,6 +51,7 @@ Still work in progress. Pictures coming soon
 | **Lightmap bleeding** | Dark or wrong mesh edges | Bilinear filtering picks up information from neighboring texels | - Increase margins between UV islands |
 | **Overlapping polygons** | Black spots in lightmaps | Multiple triangles are baked to the same texel | - Make sure no UV islands overlap<br>- Remove any overlapping geo in mesh & level<br>- Check for duplicate objects in level |
 | **Missing reflection probes** | Black reflections on metals | Lack of reflection sources | - Make sure at least 1 reflection probe covers every area in the scene |
+| **Movable SkyLight** (UE4) | Black reflections on metals | SkyLight or all reflection probes have `Mobility` set to `Movable` | - Change their `Mobility` to `Static` |
 | **Shadow acne** | Stepped shadows at certain angles | Shadow map’s resolution is not enough to represent the continuous surface | - Play with shadow bias parameter in light’s settings<br>- Increase shadow map resolution |
 | **Dynamic lights limit** | Flickering lights | Renderer reached a limit of light sources affecting the same pixel | - Reduce # of lights overlapping in that place (change radius, move, delete)<br>- Use static (baked) lights instead |
 
