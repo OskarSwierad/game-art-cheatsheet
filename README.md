@@ -1,6 +1,6 @@
 ![Troubleshooting tips for mesh issues, lighting bugs, particles, transparency, physics - in Unity, Unreal Engine, Godot and other game engines](https://techartaid.com/wp-content/uploads/2021/04/passes_shadow_frustums.jpg)
 
-**Most common glitches in game art and how to solve them**
+[**Most common glitches in game art and how to solve them**](https://techartaid.com/cheatsheet/)
 
 Find more game dev tutorials at [TechArtAid.com](https://techartaid.com)
 
