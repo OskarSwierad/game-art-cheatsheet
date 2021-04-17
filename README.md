@@ -42,7 +42,7 @@ Pictures coming soon
 | Name | Symptom | Cause | Solutions |
 | - | - | - | - |
 | **Bad sorting of polygons** | Triangles of meshes or particles appear in wrong order | Game engines employ per-object sorting instead of per-triangle, for speed | - Split big objects into smaller ones<br>- Move pivot closer to center of mesh<br>- Use dithered opacity or cutout alpha for semi-solid objects<br>- Hack: change draw priority (render queue) of shader |
-| ![](https://techartaid.com/img/cheatsheet/mat-dof-translucent.png)<br>**Depth of field & transparents** | Transparent objects are not affected by depth of field | DoF reads the depth of the scene to perform blur. Translucent materials don't write single depth | - Deal with it<br>- In Unreal, enable Separate Translucency in material |
+| ![](https://techartaid.com/img/cheatsheet/mat-dof-translucent.png)<br>**Depth of field & transparents** | Transparent objects are not affected by depth of field | DoF reads the depth of the scene to perform blur. Translucent materials don't write single depth | - Use cutout alpha (masked opacity) instead<br>- In Unreal, enable Separate Translucency in material<br>- Deal with it |
 
 ### Lighting
 
