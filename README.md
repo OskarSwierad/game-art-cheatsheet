@@ -45,10 +45,10 @@ Find more game dev tutorials at [TechArtAid.com](https://techartaid.com)
 | Name | Symptom | Cause | Solutions |
 | - | - | - | - |
 | ![](https://techartaid.com/img/cheatsheet/light-bleed.png)<br>**Lightmap bleeding** | Dark or wrong mesh edges | Bilinear filtering picks up information from neighboring texels | - Increase margins between UV islands<br>- Increase mesh's lightmap resolution |
+| ![](https://techartaid.com/img/cheatsheet/light-shadow-acne.png)<br>**Shadow acne** | Stepped shadows at certain angles | Shadow map’s resolution is not enough to represent the continuous surface | - Play with shadow bias parameter in light’s settings<br>- Increase shadow map resolution |
 | ![](https://techartaid.com/img/cheatsheet/light-probes.png)<br>**Missing reflection probes** | Black reflections on metals | Lack of reflection sources | - Make sure at least 1 reflection probe covers every area in the scene |
 | ![](https://techartaid.com/img/cheatsheet/light-mobility.png)<br>**Movable SkyLight** (UE4) | Black reflections on metals | SkyLight or all reflection probes have `Mobility` set to `Movable` | - Change their `Mobility` to `Static` |
 | **Overlapping polygons** | Black spots in lightmaps | Multiple triangles are baked to the same texel | - Make sure no UV islands overlap<br>- Remove any overlapping geo in mesh & level<br>- Check for duplicate objects in level |
-| **Shadow acne** | Stepped shadows at certain angles | Shadow map’s resolution is not enough to represent the continuous surface | - Play with shadow bias parameter in light’s settings<br>- Increase shadow map resolution |
 | **Dynamic lights limit** | Flickering lights | Renderer reached a limit of light sources affecting the same pixel | - Reduce # of lights overlapping in that place (change radius, move, delete)<br>- Use static (baked) lights instead |
 
 ### Animation
